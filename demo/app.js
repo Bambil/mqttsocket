@@ -1,30 +1,22 @@
 /**
  * Created by Sandro Kock<sandro.kock@gmail.com> on 04.03.16.
  */
+const { MqttClient } = require('../')
 
+let client = new MqttClient('ws://iot.ceit.aut.ac.ir:58908/mqtt')
+client.connect()
 
-var MqttWorker = require('MqttWorker');
+client.on('connect', () => {
+  console.log('MQTT.js is connected')
+  client.subscribe('presence')
+  client.publish('presence', 'Hello mqtt!')
+})
 
-var mqtt = new MqttWorker('../mqttWorker.js', document.URL, true);
-var client = mqtt.connect('ws://localhost:3005');
+client.on('error', (err) => {
+  console.log(`MQTT.js: ${err}`)
+})
 
-client.setMaxListeners(11);
-
-client.on('connect', function (packet) {
-    console.log('MQTT.js is connected', packet);
-});
-
-client.subscribe('presence');
-client.publish('presence', 'Hello mqtt!');
-
-client.on('message', function (topic, message, packet) {
-    // message is Buffer casting to String
-    console.log(String.fromCharCode.apply(null, message), packet);
-    client.end();
-});
-
-client.on('close', function () {
-    console.log('close');
-});
-
-
+client.on('message', (topic, message, packet) => {
+  // message is Buffer casting to String
+  console.log(String.fromCharCode.apply(null, message), packet)
+})
