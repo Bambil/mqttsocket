@@ -40,16 +40,16 @@ client.on('close', function () {
 </script>
 ```
 
-## Debug / Inspect 
-In Chrome Web Workers can be debuged at [chrome://inspect/#workers](chrome://inspect/#workers).  
+## Debug / Inspect
+In Chrome Web Workers can be debuged at [chrome://inspect/#workers](chrome://inspect/#workers).
 
-## Build 
+## Build
 ```
 npm install
 ```
 
 ```
-grunt 
+grunt
 ```
 
 or
