@@ -17,6 +17,5 @@ client.on('error', (err) => {
 })
 
 client.on('message', (topic, message, packet) => {
-  // message is Buffer casting to String
-  console.log(String.fromCharCode.apply(null, message), packet)
+  console.log(message)
 })
