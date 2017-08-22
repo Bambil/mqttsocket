@@ -1,13 +1,13 @@
 {
-  "name": "mqtt-worker",
+  "name": "mqttsocket",
   "version": "1.0.0",
-  "description": "",
-  "main": "mqttWorker.js",
+  "description": "MQTT over web socket",
+  "main": "index.js",
   "scripts": {
     "test": "karma start"
   },
   "author": "",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "dependencies": {
     "chai": "^3.5.0",
     "inherits": "^2.0.1",
