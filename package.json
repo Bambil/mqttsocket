@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "MQTT over web socket",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
   "contributors": [
     "Parham Alvani <parham.alvani@gmail.com>",
     "Iman Tabrizian <tabrizian@outlook.com>"
