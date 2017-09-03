@@ -1,6 +1,6 @@
 {
   "name": "mqttsocket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MQTT over web socket",
   "main": "index.js",
   "scripts": {
