@@ -1,10 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: [
-    'babel-polyfill',
-    './lib/'
-  ],
+  entry: './lib/index.js',
   output: {
     filename: 'mqttsocket.js',
     path: path.resolve(__dirname, 'dist')
@@ -13,20 +10,10 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['es2015'],
-              plugins:[
-                'transform-runtime'
-              ],
-            }
-          }
-        ]
+        use: {
+          loader: 'babel-loader'
+        }
       }
     ]
-  },
-  devtool: 'source-map'
+  }
 };

@@ -1,6 +1,6 @@
 {
   "name": "mqttsocket",
-  "version": "1.0.3",
+  "version": "1.0.10",
   "description": "MQTT over web socket",
   "main": "dist/mqttsocket.js",
   "scripts": {
@@ -21,6 +21,15 @@
     "websocket-stream": "^5.0.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.5.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
