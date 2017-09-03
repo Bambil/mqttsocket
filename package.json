@@ -6,7 +6,10 @@
   "scripts": {
     "test": "karma start"
   },
-  "author": "",
+  "contributors": [
+    "Parham Alvani <parham.alvani@gmail.com>",
+    "Iman Tabrizian <tabrizian@outlook.com>"
+  ],
   "license": "GPL-3.0",
   "dependencies": {
     "chai": "^3.5.0",
