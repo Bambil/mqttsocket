@@ -1,8 +1,8 @@
 {
   "name": "mqttsocket",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "MQTT over web socket",
-  "main": "index.js",
+  "main": "dist/mqttsocket.js",
   "scripts": {
     "build": "webpack"
   },
