@@ -13,7 +13,6 @@
   "license": "GPL-3.0",
   "dependencies": {
     "chai": "^3.5.0",
-    "hoek": "^4.2.0",
     "inherits": "^2.0.1",
     "lodash": "^4.6.1",
     "lodash.map": "^4.2.1",

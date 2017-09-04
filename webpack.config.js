@@ -1,15 +1,18 @@
 const path = require('path');
 
 module.exports = {
-  entry: './lib/index.js',
+  entry: './lib/',
   output: {
     filename: 'mqttsocket.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    library: 'mqttSocket',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
       {
         test: /\.js$/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader'
         }
