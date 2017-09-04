@@ -5,7 +5,6 @@ module.exports = {
   output: {
     filename: 'mqttsocket.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'mqttSocket',
     libraryTarget: 'umd'
   },
   module: {
