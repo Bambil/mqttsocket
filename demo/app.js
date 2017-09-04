@@ -1,9 +1,9 @@
 /**
  * Created by Sandro Kock<sandro.kock@gmail.com> on 04.03.16.
  */
-const { MqttClient } = require('../')
+const { MqttClient } = require('../lib')
 
-let client = new MqttClient('ws://iot.ceit.aut.ac.ir:58908/mqtt')
+let client = new MqttClient('ws://iot.eclipse.org:80/ws')
 client.connect()
 
 client.on('connect', () => {
